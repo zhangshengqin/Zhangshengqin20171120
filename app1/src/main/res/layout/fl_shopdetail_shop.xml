@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/xban_shop_detail"
+                android:layout_width="match_parent"
+
+                android:layout_height="400dp"
+                android:background="#f00"
+                app:isAutoPlay="false"
+                app:isShowNumberIndicator="true"
+                app:pointsPosition="RIGHT"
+                app:tipTextColor="@color/xbannertvbag">
+
+            </com.stx.xhb.xbanner.XBanner>
+
+            <TextView
+                android:id="@+id/tv_shop_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textColor="@color/tv_shop_title" />
+
+            <TextView
+                android:id="@+id/tv_shop_subbtitle"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="标题"
+                android:textColor="@color/tv_shop_subtitle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_shop_datail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="¥  0.00"
+                    android:textColor="@color/tv_shop_subtitle"
+                    android:textSize="20sp" />
+
+                <Button
+
+                    android:id="@+id/btn_blew_price"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+
+                    android:padding="2dp"
+                    android:text="降价通知"
+                    android:textColor="@color/tuijian_btn_like_tv"
+
+
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:src="@mipmap/ic_launcher_round" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
